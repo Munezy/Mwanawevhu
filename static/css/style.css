@@ -1,0 +1,759 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background: #1b1f3b;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #273469;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Main Header - Scoped to home page */
+.home-page .main-header {
+  background: #1b1f3b;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+.home-page .main-header .logo {
+  margin: 0;
+  font-size: 2em;
+  color: #00bcd4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.home-page .main-header .tagline {
+  font-size: 1em;
+  color: #e0e0e0;
+  margin: 5px 0 15px;
+}
+
+.home-page .main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.home-page .main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.home-page .main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.home-page .main-nav a:hover,
+.home-page .main-nav a.active {
+  color: #00bcd4;
+}
+
+
+/* =======================
+   HOME PAGE VIDEO SECTION
+   ======================= */
+
+#home-bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay Content */
+.home-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  min-height: 100vh;
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Company Header */
+.home-header h1 {
+  font-size: 3em;
+  color: #00bcd4;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2em;
+  color: #e0e0e0;
+  margin-bottom: 40px;
+}
+
+/* Navigation Bar */
+.main-nav {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #00bcd4;
+}
+
+/* ----------------------------
+   FULLSCREEN BACKGROUND VIDEO
+----------------------------- */
+#home-bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1; /* keep video behind all content */
+}
+
+/* ----------------------------
+   OVERLAY CONTENT
+----------------------------- */
+.home-overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55); /* dark layer over video */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 10%;
+}
+
+/* ----------------------------
+   HEADER AND LOGO
+----------------------------- */
+.home-header {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  font-size: 2.5em;
+  color: #00bcd4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #e0e0e0;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+/* ----------------------------
+   NAVIGATION BAR
+----------------------------- */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #00bcd4;
+}
+
+/* ----------------------------
+   FULLSCREEN BACKGROUND VIDEO
+----------------------------- */
+#home-bg-video {
+ position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ----------------------------
+   OVERLAY CONTENT
+----------------------------- */
+.home-overlay {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4); /* dark layer for text visibility */
+  padding: 0 10%;
+}
+
+/* ----------------------------
+   HEADER (Logo + Nav)
+----------------------------- */
+.home-header {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.logo {
+  font-size: 3em;
+  color: #00bcd4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #e0e0e0;
+  font-size: 1.1em;
+  margin-bottom: 25px;
+}
+
+/* ----------------------------
+   NAVIGATION
+----------------------------- */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #00bcd4;
+}
+
+/* ----------------------------
+   CENTER TEXT ON VIDEO
+----------------------------- */
+.welcome {
+  max-width: 900px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  animation: fadeIn 2s ease;
+  margin-top: 100px;
+}
+
+.welcome h2 {
+  font-size: 2.5em;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #f5f5f5;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0197a7;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: 120px; /* Account for fixed header */
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h2 {
+  font-size: 2.5em;
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0197a7;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* About Preview */
+.about-preview {
+  padding: 60px 10%;
+  text-align: center;
+  background: white;
+}
+
+.about-preview h2 {
+  color: #1b1f3b;
+  margin-bottom: 20px;
+}
+
+.about-preview p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+/* Services Preview */
+.services-preview {
+  padding: 60px 10%;
+  text-align: center;
+  background: white;
+}
+
+.services-preview h2 {
+  color: #70769f;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: black;
+  margin-bottom: 15px;
+}
+
+.service-card p {
+  color: black;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #00d4b8;
+  margin: 15px 0 10px;
+}
+
+.card p {
+  color: white;
+}
+
+/* Featured Projects */
+.featured-projects {
+  padding: 60px 10%;
+  text-align: center;
+  background: white;
+}
+
+.featured-projects h2 {
+  color: #1b1f3b;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  color: black;
+  margin: 15px 0 10px;
+}
+
+.project-card p {
+  color: black;
+  padding: 0 15px 15px;
+}
+
+/* Footer */
+footer {
+  background: #1b1f3b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2em;
+  }
+  .hero-content p {
+    font-size: 1em;
+  }
+  .services-grid, .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation */
+.fade {
+  animation: fade 1.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background: #273469;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #00bcd4;
+}
+/* Video Background Styling */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay for text readability */
+.overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  min-height: 100vh;
+  padding: 50px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===========================
+   ABOUT PAGE VIDEO BACKGROUND
+   =========================== */
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* pushes video behind everything */
+  object-fit: cover;
+}
+
+/* Overlay ensures content is visible on top */
+.overlay {
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.55); /* darkens video for better readability */
+  color: white;
+  min-height: 100vh;
+  padding: 60px 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Center the main title over the video */
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #00bcd4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-header p {
+  font-size: 1.1em;
+  color: #e0e0e0;
+}
+
+/* Body text styling */
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.about-content h2 {
+  color: #00bcd4;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.about-content ul {
+  list-style: square;
+  margin-left: 20px;
+}
+
+.about-content li {
+  margin-bottom: 8px;
+}
+
+/* Contact Page Background */
+.contact-page {
+  background-image: url('../images/home4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: white;
+}
+
+.contact-page header,
+.contact-page nav,
+.contact-page section,
+.contact-page footer {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-page::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+
+

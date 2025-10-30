@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mwanawevhu Nexus</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+  <h1>Our Projects</h1>
+  <p>Excellence in Every Design</p>
+</header>
+
+<nav>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('about') }}">About</a>
+  <a href="{{ url_for('services') }}">Services</a>
+  <a href="{{ url_for('projects') }}">Projects</a>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</nav>
+
+<section class="intro">
+  <h2>Recent Works</h2>
+  <p>Here are some of our featured architectural and surveying projects completed across Zimbabwe and beyond.</p>
+</section>
+
+<section class="services">
+  <div class="card-container">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/home1.jpg') }}" alt="Modern House Design" style="width:100%;border-radius:10px;">
+      <h3>Modern House Design - Harare</h3>
+      <p>Elegant 3-bedroom home with open-plan living spaces and solar roofing.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/home2.jpg') }}" alt="Surveying Work" style="width:100%;border-radius:10px;">
+      <h3>Topographic Survey - Bulawayo</h3>
+      <p>Land survey for a 20-hectare development site using total station mapping.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/home3.jpg') }}" alt="Commercial Building" style="width:100%;border-radius:10px;">
+      <h3>Office Complex - Mutare</h3>
+      <p>Energy-efficient commercial building featuring sustainable materials and design.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mwanawevhu Nexus | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

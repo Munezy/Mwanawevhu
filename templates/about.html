@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Mwanawevhu Nexus</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body class="about-page">
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="{{ url_for('static', filename='videos/backv.mp4') }}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay Content -->
+  <div class="overlay">
+
+    <!-- Title Section -->
+    <header class="about-header">
+      <h1>About Mwanawevhu Nexus</h1>
+      <p>Designing a sustainable future through architecture and surveying excellence.</p>
+    </header>
+
+    <!-- Navigation  -->
+    <nav>
+    <a href="{{ url_for('home') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('services') }}">Services</a>
+    <a href="{{ url_for('projects') }}">Projects</a>
+    <a href="{{ url_for('contact') }}">Contact</a>
+  </nav>
+
+    <!-- About Details Section -->
+    <section class="about-content">
+      <h2>The Team Behind the Vision</h2>
+      <p>
+        Mwanawevhu Nexus is a multidisciplinary firm specializing in architectural design,
+        surveying, and project management. We combine innovation and functionality to create
+        lasting, sustainable solutions.
+      </p>
+
+      <h2>Our Vision</h2>
+      <p>
+        To redefine spaces and landscapes across Africa through precision, creativity, and sustainable design.
+      </p>
+
+      <h2>Our Core Values</h2>
+      <ul>
+        <li>Integrity and professionalism</li>
+        <li>Accuracy and innovation</li>
+        <li>Client satisfaction first</li>
+        <li>Environmental responsibility</li>
+      </ul>
+    </section>
+  </div>
+
+</body>
+</html>

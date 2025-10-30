@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mwanawevhu Nexus | Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body class="home-page">
+
+  <!-- Header -->
+  <header class="main-header">
+    <h1 class="logo">Mwanawevhu Nexus</h1>
+    <p class="tagline">Architectural Design • Regional & Urban Planning • Surveying</p>
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('services') }}">Services</a></li>
+        <li><a href="{{ url_for('projects') }}">Projects</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Video Background -->
+  <section class="hero">
+    <video autoplay muted loop playsinline id="hero-video">
+      <source src="{{ url_for('static', filename='videos/home.mp4') }}" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>Designing Spaces That Shape the Future</h2>
+        <p>
+          At <strong>Mwanawevhu Nexus</strong>, we believe architecture is more than design —
+          it’s the art of crafting environments where people live, work, and thrive.
+          Through our passion for <strong>architecture, regional and urban planning</strong>,
+          and <strong>surveying</strong>, we help communities grow beautifully and sustainably.
+        </p>
+        <a href="{{ url_for('projects') }}" class="btn">Explore Our Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview Section -->
+  <section class="about-preview">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Mwanawevhu Nexus is a leading firm in architectural design, regional and urban planning, and surveying.
+        We specialize in creating innovative solutions that blend functionality with aesthetic appeal.
+      </p>
+      <a href="{{ url_for('about') }}" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Services Preview Section -->
+  <section class="services-preview">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Architectural Design</h3>
+          <p>Creative and functional designs tailored to your needs.</p>
+        </div>
+        <div class="service-card">
+          <h3>Urban Planning</h3>
+          <p>Strategic planning for sustainable community development.</p>
+        </div>
+        <div class="service-card">
+          <h3>Surveying</h3>
+          <p>Accurate land surveying for precise project execution.</p>
+        </div>
+      </div>
+      <a href="{{ url_for('services') }}" class="btn">View All Services</a>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="featured-projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/home1.jpg') }}" alt="Project 1">
+          <h3>Modern Residential Complex</h3>
+          <p>Innovative design meeting modern living standards.</p>
+        </div>
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/home2.jpg') }}" alt="Project 2">
+          <h3>Urban Development Plan</h3>
+          <p>Sustainable planning for city growth.</p>
+        </div>
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/home3.jpg') }}" alt="Project 3">
+          <h3>Commercial Building</h3>
+          <p>Functional spaces for business excellence.</p>
+        </div>
+      </div>
+      <a href="{{ url_for('projects') }}" class="btn">See All Projects</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Mwanawevhu Nexus. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Mwanawevhu Nexus</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+  <h1>Our Services</h1>
+  <p>What We Do Best</p>
+</header>
+
+<nav>
+  <a href="{{ url_for('home') }}">Home</a>
+  <a href="{{ url_for('about') }}">About</a>
+  <a href="{{ url_for('services') }}">Services</a>
+  <a href="{{ url_for('projects') }}">Projects</a>
+  <a href="{{ url_for('contact') }}">Contact</a>
+</nav>
+
+<section class="intro">
+  <h2>Professional Services</h2>
+  <p>We offer a wide range of architectural and surveying solutions tailored to meet client needs.</p>
+</section>
+
+<section class="services">
+  <div class="card-container">
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/home4.jpg') }}" alt="Architectural Design" style="width:100%;border-radius:10px;">
+      <h3>Architectural Design</h3>
+      <p>Concept development, planning, and 3D modeling for residential and commercial projects.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/home5.jpg') }}" alt="Land & Building Surveying" style="width:100%;border-radius:10px;">
+      <h3>Land & Building Surveying</h3>
+      <p>Topographic, cadastral, and engineering surveys using modern geospatial equipment.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/Hospital Project Projects __ Photos, videos, logos, illustrations and branding.jpg') }}" alt="Construction Project Management" style="width:100%;border-radius:10px;">
+      <h3>Regional and urban planning</h3>
+      <p>From ground-breaking to completion — we manage your projects efficiently and transparently.</p>
+    </div>
+    <div class="card">
+      <img src="{{ url_for('static', filename='images/JAIME SALVÁ, Architecture & Interior Design - J543 CALA VIÑAS.jpg') }}" alt="Urban Planning" style="width:100%;border-radius:10px;">
+      <h3>Urban Planning</h3>
+      <p>Creating functional, stylish spaces that bring comfort and beauty together.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Mwanawevhu Nexus | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
